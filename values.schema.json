@@ -1,0 +1,93 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Allure Docker Helm Chart Values",
+    "type": "object",
+    "properties": {
+      "ingress": {
+        "type": "object",
+        "properties": {
+          "enabled": { "type": "boolean", "default": true },
+          "hostnameUi": { "type": "string", "default": "allure.example.com" },
+          "hostnameApi": { "type": "string", "default": "allure-api.example.com" },
+          "tls": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": true },
+              "secretName": { "type": "string", "default": "example-ssl" }
+            }
+          }
+        }
+      },
+      "service": {
+        "type": "object",
+        "properties": {
+          "apiPort": { "type": "integer", "default": 6060 },
+          "uiPort": { "type": "integer", "default": 7070 },
+          "clusterIP": { "type": "string", "default": "None" }
+        }
+      },
+      "deployment": {
+        "type": "object",
+        "properties": {
+          "replicas": { "type": "integer", "default": 1 },
+          "containers": {
+            "type": "object",
+            "properties": {
+              "allure": {
+                "type": "object",
+                "properties": {
+                  "image": { "type": "string", "default": "frankescobar/allure-docker-service" },
+                  "imagePullPolicy": { "type": "string", "default": "Always" },
+                  "containerPort": { "type": "integer", "default": 5050 }
+                }
+              },
+              "allureUi": {
+                "type": "object",
+                "properties": {
+                  "image": { "type": "string", "default": "frankescobar/allure-docker-service-ui" },
+                  "imagePullPolicy": { "type": "string", "default": "Always" },
+                  "containerPort": { "type": "integer", "default": 5252 }
+                }
+              }
+            }
+          }
+        }
+      },
+      "persistentVolume": {
+        "type": "object",
+        "properties": {
+          "size": { "type": "string", "default": "3Gi" },
+          "storageClass": { "type": "string", "default": "default" }
+        }
+      },
+      "secrets": {
+        "type": "object",
+        "properties": {
+          "securityUser": { "type": "string", "default": "my_username" },
+          "securityPass": { "type": "string", "default": "my_password" },
+          "viewerUser": { "type": "string", "default": "view_user" },
+          "viewerPass": { "type": "string", "default": "view_pass" }
+        }
+      },
+      "config": {
+        "type": "object",
+        "properties": {
+          "checkResultsEverySeconds": { "type": "string", "default": "NONE" },
+          "keepHistory": { "type": "string", "default": "1" },
+          "urlPrefix": { "type": "string", "default": "/allure-api" },
+          "tls": { "type": "string", "default": "1" },
+          "securityEnabled": { "type": "string", "default": "1" },
+          "makeViewerEndpointsPublic": { "type": "string", "default": "0" },
+          "ui": {
+            "type": "object",
+            "properties": {
+              "publicApiUrl": { "type": "string", "default": "https://allure-api.example.com/allure-api" },
+              "publicApiUrlPrefix": { "type": "string", "default": "/allure-api" },
+              "urlPrefix": { "type": "string", "default": "/allure-ui" }
+            }
+          }
+        }
+      }
+    }
+  }
+  
