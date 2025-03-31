@@ -1,5 +1,0 @@
-apiVersion: v2
-name: allure-docker-helm-chart
-description: A Helm chart for deploying Allure Docker Service with NGINX support
-version: 0.1.0
-appVersion: "1.0"
