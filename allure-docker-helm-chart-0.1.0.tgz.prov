@@ -1,0 +1,28 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for deploying Allure Docker Service with NGINX support
+name: allure-docker-helm-chart
+version: 0.1.0
+
+...
+files:
+  allure-docker-helm-chart-0.1.0.tgz: sha256:48deb5fc87b3c8376d048d4697b009e4b2e2e7c41865302c8bffa22a1d442a6c
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJn6vw0CRAfMmnQGMpQnwAAKAwQAEhqWrVjIenhRu3XwiDW0/83
+4pA6FbUxzr73K7DAIySJWfYp91tsKyWqEEaAWrB3+khz/I0OYM8nYSX3T37ro2bQ
+INjypwZl7jNUQcdo39b+vgBJ4sO+ptHh2g6HXTe3Oc8UkOMQmysMhJ2VbMFT+nYH
+PHkclIo7he51dNUe2Api9j7MSyXXIpYcWtPoqVzyLI2zj2LnnL2WUTBQxQfinuYX
+I2gH1GCVav26m2IVKtST0iKeburenL63RTwJEAdagXJYuhdSV8RY5+T1boWO9IfH
+BjZpU1AjygtOaZNsoT9/9eMBttTw923zOrce7WLI9fBBLvYRoHuetDoeR0nOh0dO
+GbxMPsZZ2Y/ztTvCeJBFPtRBtKcB6uPmOYhgUi9Aqd7HRlr+n/GyTGhmSXMPv0w/
+VzvX9dTNo8z3Z1I2UfDtTt/GgC3s+xnpTxhR4kFW/qzVKgb3uhNfVYyVQvrPCDRT
+5CI3y5npL4ODr9PLx3dThxIdA8bCvR0N6MAthPtCx/pVZK/cLjp1Fs44niY+D7Sn
+uB2I7rpqjR8oVIbpIbVy7SiQAsH+RtPl5WXpJDQUYB2Vsb8DXRpSBI+3036xHwzN
+L2jF+TkFGesV+kWEbc6UjGkzBn/JRiSkicfiogOuTQoNseiZTZexuw0S8/FzvVum
+oyOtv5FrekziXUq6ld4w
+=gmPe
+-----END PGP SIGNATURE-----

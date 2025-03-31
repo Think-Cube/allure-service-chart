@@ -3,11 +3,11 @@ entries:
   allure-docker-helm-chart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-03-31T21:55:24.4892303+02:00"
+    created: "2025-03-31T22:37:56.0690551+02:00"
     description: A Helm chart for deploying Allure Docker Service with NGINX support
-    digest: e3c2e8906e09f8bb2fd252374794befa61789df8fa3378c9b7cc38c407718c85
+    digest: 48deb5fc87b3c8376d048d4697b009e4b2e2e7c41865302c8bffa22a1d442a6c
     name: allure-docker-helm-chart
     urls:
-    - allure-docker-helm-chart-0.1.0.tgz
+    - https://think-cube.github.io/allure-service-chart/allure-docker-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-31T21:55:24.486614+02:00"
+generated: "2025-03-31T22:37:56.0669258+02:00"
