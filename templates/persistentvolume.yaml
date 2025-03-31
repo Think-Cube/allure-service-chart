@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: allure-persistent-volume
+  namespace: allure-docker-service
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  capacity:
+    storage: {{ .Values.persistentVolume.size }}
+  storageClassName: {{ .Values.persistentVolume.storageClass | default "standard" }}
+  hostPath:
+    path: /allure/projects
