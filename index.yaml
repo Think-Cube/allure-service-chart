@@ -3,11 +3,11 @@ entries:
   allure-docker-helm-chart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-03-31T21:05:11.2216937+02:00"
+    created: "2025-03-31T21:55:24.4892303+02:00"
     description: A Helm chart for deploying Allure Docker Service with NGINX support
-    digest: 0a11e0ada4677c46acde86470554dfec61db678c74c0ef28d95b2dab676cff34
+    digest: e3c2e8906e09f8bb2fd252374794befa61789df8fa3378c9b7cc38c407718c85
     name: allure-docker-helm-chart
     urls:
     - allure-docker-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-31T21:05:11.219982+02:00"
+generated: "2025-03-31T21:55:24.486614+02:00"
